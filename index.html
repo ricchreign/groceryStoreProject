@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery Store App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav>
+        <div class="innerNav genLayout">
+          <div class="logo">
+            <span style="font-size: 45px; color: #fb9006"
+              ><i class="fa fa-shopping-cart" aria-hidden="true"></i
+            ></span>
+            <div class="logoText">
+              <h2>grocery</h2>
+              <h4>store</h4>
+            </div>
+          </div>
+
+          <!-- hamburger -->
+          <label for="toggle" class="hamburger">&#9776;</label>
+          <input type="checkbox" id="toggle" />
+
+          <div class="navRight">
+            <div class="navItems">
+              <a href="#">home</a>
+              <a href="#">about</a>
+              <a href="#">products</a>
+              <a href="#">news</a>
+              <a href="#">contact</a>
+            </div>
+
+            <div class="navIcons">
+              <span><i class="fa fa-search" aria-hidden="true"></i></span>
+              <span
+                ><i class="fa fa-shopping-cart" aria-hidden="true"></i
+              ></span>
+              <button class="btn">Shop now</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="banner genLayout">
+        <div class="bannerContent">
+          <h5>
+            <i class="fa fa-shopping-bag" aria-hidden="true"></i> the best
+            online grocery store
+          </h5>
+
+          <h1>
+            your one-stop shop for
+            <span style="color: #178255">quality groceries</span>
+          </h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam,
+            delectus deserunt ullam facere explicabo harum, repellendus,
+            distinctio pariatur ipsa tempore similique alias saepe ipsum?
+          </p>
+
+          <div class="bannerLink">
+            <button class="btn">Shop now</button>
+            <a href="#">View all products</a>
+          </div>
+
+          <div class="rating">
+            <div class="imgRating">
+              <img src="./image/personal.jpg" alt="man" />
+              <img src="./image/personal.jpg" alt="man" />
+              <img src="./image/personal.jpg" alt="man" />
+              <span><i class="fa fa-plus" aria-hidden="true"></i></span>z
+            </div>
+            <div class="ratingText">
+              <h5 style="font-size: 20px">4.9+ Rating</h5>
+              <h5>Trusted by 50k+ Customers</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="bannerImg">
+          <img
+            src="https://img.freepik.com/premium-photo/woman-shopping-supermarket_53419-5081.jpg"
+            alt="banner logo"
+          />
+        </div>
+      </div>
+    </header>
+    <!-- main section -->
+    <main>
+      <section class="secOne">
+        <div class="offerwrapper genLayout">
+          <div class="offerContent">
+            <h5>weekly offer</h5>
+            <h1>best quality, healthy and <span>fresh grocery</span></h1>
+
+            <p>
+              Lorem ipsum dolor alt amet consectetur adipisicing elit. Enim ipsa
+              eos ad, itaque commodi exercitationem rem non laborum optio
+              placeat accusamus distinctio harum eveniet.
+            </p>
+            <button class="btn">Shop now</button>
+          </div>
+
+          <div class="offerImg">
+            <img src="" alt="basket of fruits" />
+          </div>
+        </div>
+      </section>
+
+      <section class="secTwo">
+        <div class="featuredProducts genLayout">
+          <h3>featured <span>products</span></h3>
+
+          <a href="#">View all products</a>
+
+          <div class="productCardWrapper">
+            <!-- first card -->
+            <div class="productCard">
+              <div class="imgCont">
+                <span><i class="fa fa-heart" aria-hidden="true"></i></span>
+                <img src="IMG-20250702-WA0005.jpg" alt="apple" height="100%" width="100%"/>
+              </div>
+
+              <div class="cardContent">
+                <div class="tabs">
+                  <h6>fruits</h6>
+                  <h5><i class="fa fa-star" aria-hidden="true"></i>4.8</h5>
+                </div>
+
+                <h1>fresh apple</h1>
+                <span>500 g</span>
+
+                <div class="priceTags">
+                  <div class="price">
+                    <h5>$10.00</h5>
+                    <span>$12.00</span>
+                  </div>
+
+                  <button class="cartBtn"><i class="fa fa-shopping-bag" aria-hidden="true"></i> add</button>
+                </div>
+              </div>
+            </div>         
+            <!-- second card -->
+            <div class="productCard">
+              <div class="imgCont">
+                <span><i class="fa fa-heart" aria-hidden="true"></i></span>
+                <img src="IMG-20250702-WA0002.jpg" alt="banana" height="100%" width="100%" />
+              </div>
+
+              <div class="cardContent">
+                <div class="tabs">
+                  <h6>fruits</h6>
+                  <h5><i class="fa fa-star" aria-hidden="true"></i>4.8</h5>
+                </div>
+
+                <h1>fresh banana</h1>
+                <span>500 g</span>
+
+                <div class="priceTags">
+                  <div class="price">
+                    <h5>$10.00</h5>
+                    <span>$12.00</span>
+                  </div>
+
+                  <button class="cartBtn"><i class="fa fa-shopping-bag" aria-hidden="true"></i>add</button>
+                </div>
+              </div>
+            </div>        
+            <!-- third card -->
+            <div class="productCard">
+              <div class="imgCont">
+                <span><i class="fa fa-heart" aria-hidden="true"></i></span>
+                <img src="IMG-20250702-WA0004.jpg" alt="Fresh potager" height="100%" width="100%" />
+              </div>
+
+              <div class="cardContent">
+                <div class="tabs">
+                  <h6>vegetables</h6>
+                  <h5><i class="fa fa-star" aria-hidden="true"></i>4.8</h5>
+                </div>
+
+                <h1>fresh potager</h1>
+                <span>500 g</span>
+
+                <div class="priceTags">
+                  <div class="price">
+                    <h5>$10.00</h5>
+                    <span>$12.00</span>
+                  </div>
+
+                  <button class="cartBtn"><i class="fa fa-shopping-bag" aria-hidden="true"></i> add</button>
+                </div>
+              </div>
+            </div>        
+            <!-- fourth card -->
+            <div class="productCard">
+              <div class="imgCont">
+                <span><i class="fa fa-heart" aria-hidden="true"></i></span>
+               <img src="IMG-20250702-WA0003.jpg" alt="orange" height="100%" width="100%" />
+              </div>
+
+              <div class="cardContent">
+                <div class="tabs">
+                  <h6>fruits</h6>
+                  <h5><i class="fa fa-star" aria-hidden="true"></i>4.8</h5>
+                </div>
+
+                <h1>fresh orange</h1>
+                <span>500 g</span>
+
+                <div class="priceTags">
+                  <div class="price">
+                    <h5>$10.00</h5>
+                    <span>$12.00</span>
+                  </div>
+
+                  <button class="cartBtn"><i class="fa fa-shopping-bag" aria-hidden="true"></i> add</button>
+                </div>
+              </div>
+
+              
+            </div>        
+         </div>
+         </div>
+        </section>
+      </section>
+      
+      <section class="secThree">
+        <div class="summerDeals genLayout">
+          <div class="imgBg">
+            <div class="emptyImg"></div>
+          </div>
+
+
+          <div class="summerBoard">
+            <div class="summerBoardContent">
+              <h1>fresh <span>summer deals</span></h1>
+              <h5>get 50% off -limited time only</h5>
+
+              <div class="countDown">
+                <div class="timeCount">
+                  <span>06</span>
+                  <h6>days</h6>
+                </div>
+                :
+                <div class="timeCount">
+                  <span>23</span>
+                  <h6>hours</h6>
+                </div>
+                :
+                <div class="timeCount">
+                  <span>42</span>
+                  <h6>minutes</h6>
+                </div>
+                :
+                <div class="timeCount">
+                  <span>10</span>
+                  <h6>seconds</h6>
+                </div>
+              </div>
+              
+              <div class="countBtn">
+                <div class="btn">shop now</div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="imgBg imgBg2">
+            <div class="emptyImg"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="secFour">
+        <div class="dealOfTheDay">
+          <div class="justDeal">
+            <h1><span>Deal </span>of the day</h1>
+            <br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do elusmod
+            tempor 
+            <br>
+             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+          </div>         
+            
+
+
+
+          <div class="laundryCardWrapper genLayout">
+            <!-- first card -->
+            <div class="laundryCard ">
+              <div class="imgCard">
+                <div class="imgWord">
+                  <span><i class="fa fa-heart" aria-hidden="true"></i></span>
+                <h6>10%</h6>
+                </div>
+                <img src="soap-removebg-preview.png" alt="soap" height="200">
+              </div>
+
+
+              <div class="laundryList">
+                <h3>Laundry Supplies</h3>
+                <h4>Laundry Detergent</h4>
+                  <div class="price">
+                    <h5>$100.00</h5>
+                    <span>$120.00</span>
+                  </div>
+                 <h5>⭐ 4.8</h5>
+                 <p class="loremDescription">
+                  Lorem ipsum dolor sit amet,<br> 
+                  consectetur adipiscing elit, sed do <br>
+                  elusmod</p>
+                  <button class="cartBtn">👜 add</button>
+              </div>                 
+            </div>
+
+            <!-- Second Card -->
+
+             <div class="laundryCard">
+              <div class="imgCard">
+                
+                  <span><i class="fa fa-heart" aria-hidden="true"></i></span>
+                <h6>10%</h6>
+                
+                <img src="soap-removebg-preview.png" alt="soap" height="200">
+              </div>
+
+
+              <div class="laundryList">
+                <h3>Laundry Supplies</h3>
+                <h4>Laundry Detergent</h4>
+                  <div class="price">
+                    <h5>$100.00</h5>
+                    <span>$120.00</span>
+                  </div>
+                 <h5>⭐ 4.8</h5>
+                 <p class="loremDescription">
+                  Lorem ipsum dolor sit amet,<br> 
+                  consectetur adipiscing elit, sed do <br>
+                  elusmod</p>
+                  <button class="cartBtn">👜 add</button>
+              </div>                 
+            </div>   
+          </div>     
+        </div>
+      </section>
+
+       <section class="secFive">
+        <div class="featuredProducts genLayout">
+          <h3>Best <span>Selling Products</span></h3>
+
+          <a href="#">View all products</a>
+
+          <div class="productCardWrapper">
+            <!-- first card -->
+            <div class="productCard">
+              <div class="imgCont">
+                <span>❤️</span>
+                <img src="IMG-20250702-WA0005.jpg" alt="apple" height="100%" width="100%"/>
+              </div>
+
+              <div class="cardContent">
+                <div class="tabs">
+                  <h6>fruits</h6>
+                  <h5>⭐ 4.8</h5>
+                </div>
+
+                <h1>fresh apple</h1>
+                <span>500 g</span>
+
+                <div class="priceTags">
+                  <div class="price">
+                    <h5>$10.00</h5>
+                    <span>$12.00</span>
+                  </div>
+
+                  <button class="cartBtn">👜 add</button>
+                </div>
+              </div>
+            </div>         
+            <!-- second card -->
+            <div class="productCard">
+              <div class="imgCont">
+                <span>❤️</span>
+                <img src="IMG-20250702-WA0002.jpg" alt="banana" height="100%" width="100%" />
+              </div>
+
+              <div class="cardContent">
+                <div class="tabs">
+                  <h6>fruits</h6>
+                  <h5>⭐ 4.8</h5>
+                </div>
+
+                <h1>fresh banana</h1>
+                <span>500 g</span>
+
+                <div class="priceTags">
+                  <div class="price">
+                    <h5>$10.00</h5>
+                    <span>$12.00</span>
+                  </div>
+
+                  <button class="cartBtn">👜 add</button>
+                </div>
+              </div>
+            </div>        
+            <!-- third card -->
+            <div class="productCard">
+              <div class="imgCont">
+                <span>❤️</span>
+                <img src="IMG-20250702-WA0004.jpg" alt="Fresh potager" height="100%" width="100%" />
+              </div>
+
+              <div class="cardContent">
+                <div class="tabs">
+                  <h6>vegetables</h6>
+                  <h5>⭐ 4.8</h5>
+                </div>
+
+                <h1>fresh potager</h1>
+                <span>500 g</span>
+
+                <div class="priceTags">
+                  <div class="price">
+                    <h5>$10.00</h5>
+                    <span>$12.00</span>
+                  </div>
+
+                  <button class="cartBtn">👜 add</button>
+                </div>
+              </div>
+            </div>        
+            <!-- fourth card -->
+            <div class="productCard">
+              <div class="imgCont">
+                <span>❤️</span>
+               <img src="IMG-20250702-WA0003.jpg" alt="orange" height="100%" width="100%" />
+              </div>
+
+              <div class="cardContent">
+                <div class="tabs">
+                  <h6>fruits</h6>
+                  <h5>⭐ 4.8</h5>
+                </div>
+
+                <h1>fresh orange</h1>
+                <span>500 g</span>
+
+                <div class="priceTags">
+                  <div class="price">
+                    <h5>$10.00</h5>
+                    <span>$12.00</span>
+                  </div>
+                  <button class="cartBtn">👜 add</button>
+                </div>
+              </div>
+            </div> 
+            </div>
+         </div>
+        </section>  
+      </section>
+    </main>
+
+
+    <section>
+      <div class="testMonialBanner genLayout">
+        <div class="testWord">
+          <h3><span>testimonials </span> from our loyal customers</h3>
+        </div>
+
+        <div class="testImg">
+          <img src="wiz.jpg" alt="human" height="40px" width="40px">
+          <img src="" alt="human">
+          <img src="" alt="human">
+          <img src="" alt="human">
+          <img src="" alt="human">
+          <img src="" alt="human">
+
+        </div>
+
+        <div class="testPool">
+          <p>R.D. pools has been exceptional always reliable and through. They above and beyond in their services.</p>
+
+        </div>
+ 
+        <div class="testStars">
+          <span><i class="fa fa-star" aria-hidden="true"></i></span>
+          <span><i class="fa fa-star" aria-hidden="true"></i></span>
+          <span><i class="fa fa-star" aria-hidden="true"></i></span>
+          <span><i class="fa fa-star" aria-hidden="true"></i></span>
+          <span><i class="fa fa-star" aria-hidden="true"></i></span>
+        </div>
+
+        <div class="testJohn">
+          <h5>john Smith</h5>
+          <h6>House wife</h6>
+        </div>
+
+
+      </div>
+    </section>
+  </body>
+</html>

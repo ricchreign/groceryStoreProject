@@ -1,0 +1,701 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+header{
+    height: 100vh;
+    background-color: #f6f6f6;
+    padding-top: 6rem;
+}
+
+nav{
+    padding-block: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    background-color: #f6f6f6;
+}
+
+.hamBurger,
+#toggle {
+    display: none;
+}
+
+.genLayout{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.innerNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.logo > span > i {
+    font-size: 2rem;
+    color: #fb9006;
+}
+
+.logoText {
+    text-align: right;
+}
+
+.logoText > h2 {
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.logoText > h2 {
+    text-transform: capitalize;
+    font-size: 18px;
+    color: #178255;
+}
+
+
+.navRight{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+}
+
+.navItems{
+    display: flex;
+    gap: 3rem;
+}
+
+.navItems > a {
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.navItems > a:first-child{
+    color: #178255;
+}
+
+.navIcons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.btn{
+    background-color: #178255;
+    padding: .4rem 1.5rem;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* styling for banner */
+.banner{
+    display: flex;
+    margin-top: 2rem;
+    gap: 3rem;
+}
+
+.bannerContent{
+    /* flex: 1; */
+    width: 60%;
+}
+
+.bannerContent > h5{
+    background-color: #fff;
+    padding: .3rem 1rem;
+    border-radius: 25px;
+    text-transform: capitalize;
+    width: 240px;
+}
+
+.bannerContent > h5 > i{
+    color: #178255;
+    margin-right: 8px;
+}
+
+.bannerContent > h1{
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    margin-block: 2rem;
+}
+
+.bannerContent > h1> span{
+    color: #178255;
+}
+
+.bannerLink{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.bannerContent > p{
+    font-size: 14px;
+    opacity: 0;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+}
+
+.bannerLink > a{
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 2px solid;
+}
+
+.rating{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.imgRating{
+    display: flex;
+    align-items: center;
+}
+
+.imgRating > img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.imgRating > img:nth-child(1){
+    margin-top: -.3rem;
+}
+
+.imgRating > img:nth-child(2){
+    margin-left: -1.5rem;
+    margin-top: -.5rem;
+}
+
+.imgRating > img:nth-child(3){
+    margin-left: -1.5rem;
+    margin-top: -.3rem;
+}
+
+.imgRating > span{
+    background-color: #fb9006;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    margin-left: -1.8rem;
+}
+
+.imgRating > span > i{
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+
+.bannerImg{
+    border-block: 2px solid #178255;
+    border-radius: 100%;
+    padding: .6rem;
+    width: 40%;
+}
+.bannerImg > img{
+    object-fit: cover;
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.secOne {
+    padding-block-start: 3rem;
+}
+
+.offerWrapper {
+    background-color: #f1f9f4;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.offerContent{
+    width: 50%;
+}
+
+.offerContent > h5 {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.offerContent > h1 {
+    font-size: 2.5rem;
+    margin-block: 1rem;
+    text-transform: capitalize;
+}
+
+.offerContent > h1 > span,
+.featuredProducts > h3 > span {
+    color: #178255;
+}
+
+.offerContent > p {
+    font-size: 0.7rem;
+    opacity: 0.4;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+}
+
+.offerImg {
+    width:40%;
+}
+
+.offerImg > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.secTwo {
+    background-color: #f6f6f6;
+    padding-block: 3rem;
+}
+
+.featuredProducts > h3 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+}
+
+.featuredProducts > a {
+    color: #000;
+    font-weight: 500;
+    text-align: right;
+    display: block;
+}
+
+.productCardWrapper {
+    margin-block: 1rem;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.productCard {
+    border-radius: 20px;
+}
+
+.imgCont {
+    background-color: #dcece9;
+    height: 40vh;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    position: relative;
+}
+
+.imgCont > span{
+    border: 2px solid #178255;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.cardContent {
+    padding: 0.8rem .8re, o;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #fff;
+}
+
+.tabs,
+.priceTags {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tabs > h6 {
+    font-size: 0.8rem;
+    color: #178255;
+    text-transform: capitalize;
+}
+
+.cardContent > h1 {
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.cardContent > span {
+    font-size: small;
+    opacity: 0.4;
+    font-weight: 500;
+}
+.price {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.price > h5 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.price > span {
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: line-through;
+    opacity: 0.4;
+    margin-block: 0.7rem;
+}
+
+.cartBtn {
+    background-color: #dcece9;
+    border: none;
+    padding: 0.2rem 0,2rem;
+    border-radius: 7px;
+}
+
+.secThree{
+    padding-block: 3rem;
+}
+.summerDeals{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 1rem;
+}
+.imgBg{
+    background-image: url(lady1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    height: 55vh;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+.emptyImg{
+    border: 2px solid #fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.imgBg2 {
+    background-image: url(lady2.jpg);
+}
+
+.summerBoard {
+    background-color: #f6f6f6;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.summerBoardContent > h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.8rem;
+}
+
+.summerBoardContent > h1 > span {
+    color: #178255;
+}
+
+.summerBoardContent > h5 {
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 0.7rem;
+    font-weight: 600;
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+.countDown {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+    margin-block: 2rem;
+}
+
+.timeCount > span {
+    font-weight: 600;
+    border-radius: 5px;
+    box-shadow: 0.1rem 0.1rem 10px #efefef;
+    width: 60px;
+    height: 50px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timeCount > h6 {
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 4px;
+}
+
+.countBtn {
+    width: 145px;
+    margin: auto;
+}
+
+
+ styling for secFour{
+}
+.dealOfTheDay{
+    background-color: #ffffff;
+    padding-block: 3rem;
+    border: 2px solid red;
+}
+.justDeal{
+    text-align: center;
+}
+.justDeal{
+    font-size: 0.7rem;
+    opacity: 0.4rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    line-height: 1.3;
+}
+.justDeal > h1>span {
+    color: #178255;
+}
+.laundryCardWrapper{
+    display: flex;
+}
+.laundryCard{   
+    border: 2px solid black;
+    width: 550px;  
+    margin-left: 40px;
+    box-sizing: border-box;
+    height: 350px;
+    border-radius: 16px;
+    margin-block: 1rem;
+    display: flex;
+    grid-template-columns: (2fr 1fr)
+}
+.imgWord >span{
+    align-items: end;
+}
+.laundryCard > .imgCard{
+  background-color: #f6f6f6;
+   width: auto;
+   margin: 18px;
+   border-radius: 10px;
+   height: auto; 
+}
+
+.laundryCard {
+    grid-template-columns: 1fr 2fr;
+    
+    height: auto;
+    gap: px;
+}
+.laundryList > .p{
+    
+    opacity: .4;
+    font-size: 13px;
+}
+.laundryList {  
+    margin-top: 15px;
+    vertical-align: top;
+     
+}
+.laundryList > h3{
+    color: #178255;
+    padding-bottom: 4px;
+}
+.laundryList > h4{
+    padding-bottom: 10px;
+}
+
+.laundryList > h5{
+    padding-top: 6px;
+    padding-bottom: 4px;
+}
+
+.loremDescription{
+    padding-bottom: 10px;
+    font-size: 100%;
+}
+
+.imgCard > span{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.imgCard >h6{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    top: 4rem;
+}
+.addBtn{
+    background-color: #ddebe8;
+    color: green;
+    border-radius: 3px;
+    width: 70px;
+}
+
+
+
+styling for testi
+
+
+.testMonialBanner{
+    display: flex;
+    border: 2px solid green;
+}
+
+.testWord{
+    border: 2px solid red;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.testWord > h3 > span{
+    color: #178255;
+}
+
+.testImg{
+    display: flex;
+    justify-content: space-between;
+    margin-block: 40px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.testPool{
+    text-align: center;
+    margin-block: 60px;
+    max-width: 700px;
+    margin-left: 200px;
+}
+
+.testStars{
+    text-align: center;
+    margin-block: 20px;
+}
+
+.testJohn{
+    text-align: center;
+    margin-block: 10px;
+}
+
+
+@media (min-width: 260px) and (max-width: 460px){
+    .navRight{
+        display: none;
+        position: absolute;
+        width: 85%;
+        padding: 1.4rem 1rem;
+        top: 3.5rem;
+        right: 3px;
+        z-index: 1;
+        background-color: #0a0701;
+        opacity: 0.8;
+        border-bottom: 4px solid #fff;
+        transform: translate(100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    }
+
+    .navItems{
+        flex-direction: column;
+    }
+
+    .navItems{
+        color: #fff;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #fff;
+    }
+
+    .navIcons{
+        padding: 0;
+        border-left: none;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .navIcons > span{
+        font-size: 1rem;
+        color: #fff;
+    }
+
+    #toggle:checked + .navRight{
+        display: block;
+        transform: none;
+    }
+
+
+    .banner {
+        width: calc(100% - 40px);
+        flex-direction: column;
+    }
+
+    .bannerContent{
+        width: 100%;
+    }
+
+    .bannerContent > h1{
+        font-size: 2rem;
+    }
+
+    .bannerImg{
+        width: 90%;
+    }
+
+    .offerWrapper{
+        flex-direction: column;
+    }
+
+    .offerWrapper{
+        flex-direction: column;
+        width: 300px;
+        gap: 2rem;
+    }
+
+    .offerContent, .offerImg{
+        width: 100%;
+    }
+
+    .productCardWrapper{
+        width: 300px;
+        margin: 1rem auto;
+        grid-template-columns: 1fr;
+    }
+
+    .summerDeals{
+        width: 360px;
+        grid-template-columns: 1fr;
+    }
+
+    .summerBoard{
+        padding-block: 1rem;
+    }
+}
