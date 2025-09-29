@@ -290,7 +290,7 @@ Designing for
 
 .secTwo{
     background-color: #f6f6f6;
-    height: 500px;
+    /* height: 500px; */
     padding-block: 20px;
     margin-top: 40px;
 }
@@ -348,7 +348,7 @@ Designing for
 }
 
 .cardContent {
-    padding: 0.8rem .8re, o;
+    padding: 0.8rem .8rem, o;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     background-color: #fff;
@@ -523,7 +523,6 @@ Designing for
     border-radius: 16px;
     margin-block: 1rem;
     display: flex;
-    grid-template-columns: (2fr 1fr);
 }
 
 .laundryCard > .imgCard{
@@ -538,7 +537,6 @@ Designing for
     grid-template-columns: 1fr 2fr;
     
     height: auto;
-    gap: px;
 }
 .laundryList > .p{
     
@@ -568,21 +566,11 @@ Designing for
     font-size: 100%;
 }
 
-.imgCard {
-    width: 30rem;
-    background-color: #f6f6f6;
-    margin: 7px;
-    margin-right: 3rem;
-    border-radius: 12px;
-    position: relative;
-}
-
 .imgWord{
     display: flex;
     justify-content: space-between;
     position: absolute;
-    gap: 100px;
-    
+    gap: 100px;    
 }
 
 .imgWord > .off{
@@ -596,11 +584,9 @@ Designing for
     margin-block: 7px;
     width: 70px;
     font-size: 10px;
-    
 }
 
 .imgWord > span{
-   
     border: 2px solid #178255;
     width: 40px;
     height: 40px;
@@ -612,7 +598,6 @@ Designing for
     top: 5px;
     right: -8rem;
     color: green;
-
 }
 
 .button1{
@@ -622,7 +607,6 @@ Designing for
     right: 1rem;
     justify-content: end;
     padding-bottom: 0;
-
 }
 
 .addBtn{
@@ -632,8 +616,6 @@ Designing for
     width: 70px;
 }
 
-
-
 styling for best selling products
 .secFive{
     background-color: red;
@@ -641,8 +623,6 @@ styling for best selling products
     padding-block: 20px;
     margin-top: 40px;
 }
-
-
 
 styling for testi
 .testMonialBanner{
@@ -779,22 +759,17 @@ sectionEight
 
 .logoMe{
     display: flex;
-    gap: 150px;
+    /* gap: 150px; */
+    justify-content: space-between;
     margin-block: 70px;
     background-color: white;
-    height: 90px;
+    /* height: 90px; */
     line-height: 25px;
 }
 
 .logo{
     gap: 30px;
 }
-
-
-
-
-
-
 
 .green{
   background-color: #178255;
@@ -803,7 +778,7 @@ sectionEight
 .greenBanner{
     background-color: #178255;
     color: #dcece9;
-    height: 300px;
+    /* height: 300px; */
 }
 
 
@@ -817,18 +792,19 @@ sectionEight
 
 .cartStyles{
     display: flex;
-    gap: 100px;
+    justify-content: space-between;
 }
 
 .cartMaking{
-    padding-left: 30px;
+    left: 30px;
 }
+
 .cartLogo{
     display: flex;
-    gap: 20px;
+    gap: 10px;
     align-items: center;
-    margin-bottom: 1rem;
-    padding-top: 50px;
+    padding-block: 2rem;
+    
 }
 
 .socialIcons >a{
@@ -860,10 +836,9 @@ sectionEight
 }
 
 .saas{
-    padding-left: 400px;
     display: flex;
-    margin-top: 25px;
-    margin-bottom: 100px;
+    justify-content: center;
+    padding-top: 25px;
 }
 
 .logoCall{
@@ -975,6 +950,10 @@ sectionEight
         width: 100%;
     }
 
+    .featuredProducts{
+        padding: 10px;
+    }
+
     .productCardWrapper{
         width: 300px;
         margin: 1rem auto;
@@ -995,8 +974,105 @@ sectionEight
     }
 
     .laundryCardWrapper{
-        width: calc(100% - 40px);
-        margin: 1rem auto;
         flex-direction: column;
     }
+
+    .laundryCard{
+        /* width: calc(100% - 40px); */
+        margin: 1rem auto;
+        flex-direction: column;
+        grid-template-columns: 1rem;
+        justify-content: start;
+        width: calc(100%-40px);
+        width: 100%;
+        padding: 4px;
+        display: flex;
+    }
+
+    .testImg > img{
+        display: grid;
+        width: 50px;
+        gap: 50px;
+        height: 50px;
+        border-radius: 100%;
+        grid-template-columns: repeat(3,1rem);
+    }
+
+    .testImg > img:nth-child(1){
+        top: -20px;
+        position: relative;
+    }
+
+    .testImg > img:nth-child(7){
+        top: -20px;
+        position: relative;
+    }
+
+    .testImg > img:nth-child(3){
+        top: 20px;
+        position: relative;
+    }
+    .testImg > img:nth-child(5){
+        top: 20px;
+        position: relative;
+    }
+    .testImg > img:nth-child(4){
+        top: 20px;
+        border: 4px solid #fb9006;
+        position: relative;
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+    }
+    .leftArrow{
+        left: 1rem;
+        font-size: 4rem;
+        position: relative;
+        top: 50px;
+    }
+    .rightArrow{
+        right: -20rem;
+        font-size: 4rem;
+        position: relative;
+        top: -30px;
+    }
+    .imgBanner{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 20px;
+    }
+    .logoMe{
+        /* gap: 30px; */
+        padding: 10px;
+        line-height: 0;
+    }
+    .logo{
+        gap: 10px;
+        display: grid;
+    }
+    .logoWord > h5{
+        width: 90%;
+    }
+    
+    .logoWord > h6{
+        width: 80%;
+    }
+    .cartStyles{
+        display: grid;
+        padding: 10px;
+    }
+
+    .contact >h3{
+        color: #000;
+    }
+
+    .companyWord >h3{
+        color: #000;
+    }
+
+    .customerC >h3{
+        color: #000;
+    }
+    
+    
 }
